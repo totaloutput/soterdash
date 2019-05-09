@@ -9,12 +9,12 @@ import (
 	"html/template"
 	"time"
 
-	"github.com/soteria-dag/soterdash/census"
-	"github.com/soteria-dag/soterd/chaincfg/chainhash"
-	"github.com/soteria-dag/soterd/rpcclient"
-	"github.com/soteria-dag/soterd/soterjson"
-	"github.com/soteria-dag/soterd/soterutil"
-	"github.com/soteria-dag/soterd/wire"
+	"github.com/totaloutput/soterdash/census"
+	"github.com/totaloutput/soterd/chaincfg/chainhash"
+	"github.com/totaloutput/soterd/rpcclient"
+	"github.com/totaloutput/soterd/soterjson"
+	"github.com/totaloutput/soterd/soterutil"
+	"github.com/totaloutput/soterd/wire"
 )
 
 const (
@@ -41,6 +41,7 @@ type soterdNode struct {
 	Online bool
 	Connections []*census.Node
 	LastChecked time.Time
+	Stale bool
 }
 
 // Represent node data that we're interested in rendering
@@ -205,6 +206,7 @@ func nodeInfo(address string) (soterdNode, error) {
 		Online: cNode.Online,
 		Connections: cNode.Connections(),
 		LastChecked: cNode.LastChecked,
+		Stale: cNode.IsStale(e.Interval * 3),
 	}
 
 	return n, nil

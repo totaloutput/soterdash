@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/soteria-dag/soterd/soterutil"
+	"github.com/totaloutput/soterd/soterutil"
 )
 
 // beforeBody renders common HTML document sections including the opening <body> element
@@ -165,7 +165,7 @@ func handleDag(w http.ResponseWriter, r *http.Request) {
 // handleNode responds to requests for /node
 // It renders census-enumerated node details
 func handleNode(w http.ResponseWriter, r *http.Request) {
-	title := "soterdash - nodes"
+	title := "soterdash - node"
 
 	// For r.URL.Path of /node/127.0.0.1:18555, parts will be: ["", "node", "127.0.0.1:18555"]
 	parts := strings.Split(r.URL.Path, "/")

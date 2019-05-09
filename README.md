@@ -31,8 +31,8 @@ recommended that `GOPATH` is set to a directory in your home directory such as
 * Obtain a copy of `soterdash`, and build it
 
 ```bash
-git clone ssh://github.com/soteria-dag/soterdash $GOPATH/src/github.com/soteria-dag/soterdash
-cd $GOPATH/src/github.com/soteria-dag/soterdash
+git clone ssh://github.com/totaloutput/soterdash $GOPATH/src/github.com/totaloutput/soterdash
+cd $GOPATH/src/github.com/totaloutput/soterdash
 export GO111MODULE=on
 go build && echo "build ok" && go install . && echo "install ok"
 ```

@@ -16,10 +16,10 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/soteria-dag/soterdash/census"
-	"github.com/soteria-dag/soterdash/rand"
-	"github.com/soteria-dag/soterd/chaincfg"
-	"github.com/soteria-dag/soterd/rpcclient"
+	"github.com/totaloutput/soterdash/census"
+	"github.com/totaloutput/soterdash/rand"
+	"github.com/totaloutput/soterd/chaincfg"
+	"github.com/totaloutput/soterd/rpcclient"
 )
 
 var (

@@ -8,9 +8,9 @@ import (
 	"net"
 	"strings"
 
-	"github.com/soteria-dag/soterd/chaincfg"
-	"github.com/soteria-dag/soterd/integration/rpctest"
-	"github.com/soteria-dag/soterd/rpcclient"
+	"github.com/totaloutput/soterd/chaincfg"
+	"github.com/totaloutput/soterd/integration/rpctest"
+	"github.com/totaloutput/soterd/rpcclient"
 )
 
 // Soterd provides a bit of an abstraction from the soterd rpctest.Harness interface.

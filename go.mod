@@ -1,4 +1,4 @@
-module github.com/soteria-dag/soterdash
+module github.com/totaloutput/soterdash
 
 go 1.12
 
@@ -14,7 +14,7 @@ require (
 	github.com/golang/protobuf v1.3.1 // indirect
 	github.com/hpcloud/tail v1.0.0 // indirect
 	github.com/jessevdk/go-flags v1.4.0 // indirect
-	github.com/soteria-dag/soterd v0.0.0-20190508182005-8a8592079808
+	github.com/totaloutput/soterd v0.0.0-20190509165014-56927895ebf5
 	github.com/wcharczuk/go-chart v2.0.1+incompatible
 	golang.org/x/crypto v0.0.0-20190404164418-38d8ce5564a5 // indirect
 	golang.org/x/image v0.0.0-20190321063152-3fc05d484e9f // indirect
